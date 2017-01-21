@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $EM_CONF[$_EXTKEY] = array (
   'title' => 'Fluid Content Engine',
   'description' => 'Fluid Content Element engine - integrates extremely compact and highly dynamic content element templates written in Fluid. See: https://github.com/FluidTYPO3/fluidcontent',
@@ -19,11 +20,11 @@ $EM_CONF[$_EXTKEY] = array (
   'clearCacheOnLoad' => 1,
   'lockType' => '',
   'version' => '5.1.0',
-  'constraints' => 
+  'constraints' =>
   array (
     'depends' =>
     array (
-      'php' => '7.0.0-7.1.99',
+      'php' => '5.5.0-7.1.99',
       'typo3' => '7.6.0-8.6.99',
       'flux' => '7.3.0-8.99.99',
     ),
