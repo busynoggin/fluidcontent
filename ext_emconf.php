@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 $EM_CONF[$_EXTKEY] = array (
   'title' => 'Fluid Content Engine',
   'description' => 'Fluid Content Element engine - integrates extremely compact and highly dynamic content element templates written in Fluid. See: https://github.com/FluidTYPO3/fluidcontent',
