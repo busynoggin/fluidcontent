@@ -309,10 +309,12 @@ class ConfigurationService extends FluxService implements SingletonInterface
                 $sanitizedGroup = $this->sanitizeString($group);
                 $tabId = $group === $sanitizedGroup ? $group : 'group_' . $sanitizedGroup;
                 if (!isset($wizardTabs[$tabId]['title'])) {
-                    $wizardTabs[$tabId]['title'] = $this->translateLabel(
+                    $label = $this->translateLabel(
                         'fluidcontent.newContentWizard.group.' . $group,
                         ExtensionNamingUtility::getExtensionKey($extensionKey)
-                    ) ?? $tabId;
+                    );
+
+                    $wizardTabs[$tabId]['title'] = ($label) ? $label : $tabId;
                 }
                 $contentElementId = $form->getOption('contentElementId');
                 $elementTsConfig = $this->buildWizardTabItem($tabId, $id, $form, $contentElementId);
